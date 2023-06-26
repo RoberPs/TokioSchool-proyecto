@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carta para llevar restaurante">
+    <link rel="shortcut icon" href="src/img/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css"
+    <title>Carta para llevar restaurante</title>
+</head>
+<body class="fondo-llevar">
+
+    <header class="header">
+        <div class="contenido-logo">
+            <a href="index.html">
+                <img src="src/img/logomarca.webp" alt="logo-restaurante">  
+            </a> 
+            <div class="logo-texto">
+                <h1>Taste</h1>
+                <span>Food and Drinks</span>
+            </div>    
+        </div> 
+
+        <nav class="menu-principal navbar navbar-expand-lg d-flex justify-content-end overflow-hidden p-0">
+
+             <button type="button" class="navbar-toggler" data-bs-target="#menuCanvas" data-bs-toggle="offcanvas">  
+                    <img src="src/img/btn-menu.webp" class="logo-desplegable" alt="logo-desplegable">  
+             </button>
+
+            <div class="collapse navbar-collapse menu-header">
+                  <ul class="d-flex justify-content-between align-items-center m-0">
+                     <li class="navbar-item">
+                        <a href="index.html" class="nav-link">Restaurante</a>     
+                     </li>
+
+                     <li class="navbar-item">
+                        <a href="carta.html" class="nav-link">Carta</a>
+                     </li>
+                     <li class="navbar-item">
+                        <a href="especialidades.html" class="nav-link">Especialidades</a>
+                     </li>
+                     <li class="navbar-item">
+                        <a href="grupos.html" class="nav-link">Menu Grupos</a>
+                     </li>
+                     <li class="navbar-item">
+                        <a href="reservas.html" target="_blank" rel="noopener noreferrer" class="nav-link mr-0" >Reservas</a>
+                     </li>
+                  </ul>
+            </div>
+        </nav>
+
+        <div class="menu-desplegable offcanvas offcanvas-end w-50" id="menuCanvas">
+            <div class="offcanvas-header heading">
+                <h3>Taste</h3>
+                <button class="btn btn-close btn-close-white" data-bs-dismiss="offcanvas">  
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <nav class="nav d-flex flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <span>Restaurante</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carta.html">
+                            <span>Carta</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="especialidades.html">
+                            <span>Especialidades</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="grupos.html">
+                            <span>Menú para Grupos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservas.html" target="_blank" rel="noopener noreferrer">
+                            <span>Reservas</span>
+                        </a>
+                    </li>       
+                </nav>
+            </div>
+        </div>        
+    </header>
+    
+    <main class="llevar" id="turn-up">
+        <div class="llevar-contenido container-xl pt-3 pb-3">
+            <div class="llevar-borde">
+               <h1 class="text-white text-center mt-5 mb-3">Para <span>Llevar</span></h1> 
+               <div class="row contenedor-platos m-1">     
+                    <div class="platos p-3 col-md-6">
+                        <div class="plato-clase d-flex justify-content-between align-items-center mb-3">
+                            <h2>Entrantes:</h2> 
+                            <img src="src/img/entrantes.webp" alt="icono-entrante">
+                        </div>        
+                        <div class="contenido-plato">
+                            <div class="plato-texto">
+                                <h3>Patatas 6 Salsas</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatibus rerum ipsa!</p>
+                            </div>
+                            <div class="plato-precio">
+                                <p>4.90€</p>
+                            </div>
+                        </div>   
+                        <div class="contenido-plato">
+                            <div class="plato-texto">
+                                <h3>Crujientes de Aguacate y Salmón</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatibus rerum ipsa!</p>
+                            </div>
+                            <div class="plato-precio">
+                                <p>6.90€</p>
+                            </div>
+                        </div>   
+                        <div class="contenido-plato">
+                            <div class="plato-texto">
+                                <h3>Croquetas de Jamon y Queso curado</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatibus rerum ipsa!</p>
+                            </div>
+                            <div class="plato-precio">
+                                <p>7.90€</p>
+                            </div>
+                        </div>      
+                    </div> <!-- Entrantes -->
+                    <div class="platos p-3 col-md-6">
+                        <div class="plato-clase d-flex justify-content-between align-items-center mb-3">
+                            <h2>Ensaladas:</h2> 
+                            <img src="src/img/salad.png" alt="icono-ensalada">
+                        </div>
+                        <div class="contenido-plato">
+                            <div class="plato-texto">
+                                <h3>Ensalada Mediterránea</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatibus rerum ipsa!</p>
+                            </div>
+                            <div class="plato-precio">
+                                <p>8.90€</p>
+                            </div>
+                        </div>   
+                        <div class="contenido-plato">
+                            <div class="plato-texto">
+                                <h3>Ensalada de Pimientos con Ventresca</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatibus rerum ipsa!</p>
+                            </div>
+                            <div class="plato-precio">
+                                <p>9.90€</p>
+                            </div>
+                        </div>   
+                        <div class="contenido-plato">
+                            <div class="plato-texto">
+                                <h3>Ensala con Queso de Cabra y Frutos secos</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatibus rerum ipsa!</p>
+                            </div>
+                            <div class="plato-precio">
+                                <p>9.90€</p>
+                            </div>
+                        </div>   
+                    </div><!-- Ensaladas -->
+                    <div class="platos carta-bowls p-3 col-md-6">
+                        <div class="plato-clase d-flex justify-content-between align-items-center mb-3">
+                            <h2>Bowls:</h2> 
+                            <img src="src/img/bowl.webp" alt="icono-bowl">
+                        </div>
+                        <div class="contenido-plato">
+                            <div class="plato-texto">
+                                <h3>Bowl de Pasta con Atún y Salsa Parmesana</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatibus rerum ipsa!</p>
+                            </div>
+                            <div class="plato-precio">
+                                <p>10.90€</p>
+                            </div>
+                        </div>   
+                        <div class="contenido-plato">
+                            <div class="plato-texto">
+                                <h3>Bowl de Pollo con Berenjena y Salmón</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatibus rerum ipsa!</p>
+                            </div>
+                            <div class="plato-precio">
+                                <p>10.90€</p>
+                            </div>
+                        </div>   
+                        <div class="contenido-plato">
+                            <div class="plato-texto">
+                                <h3>Bowl de Salmón con Frutas y Verduras</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatibus rerum ipsa!</p>
+                            </div>
+                            <div class="plato-precio">
+                                <p>10.90€</p>
+                            </div>
+                        </div>      
+                    </div> <!-- bowls -->
+                    <div class="platos carta-sandwiches p-3 col-md-6">
+                        <div class="plato-clase d-flex justify-content-between align-items-center mb-3">
+                            <h2>Sándwiches y Hamburguesas:</h2> 
+                            <img src="src/img/sandwhich.webp" alt="logo-sandwich">
+                        </div>
+                        <div class="contenido-plato">
+                            <div class="plato-texto">
+                                <h3>Sándwich Pollo y Verduras con Salsa Thai</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatibus rerum ipsa!</p>
+                            </div>
+                            <div class="plato-precio">
+                                <p>6.90€</p>
+                            </div>
+                        </div>   
+                        <div class="contenido-plato">
+                            <div class="plato-texto">
+                                <h3>Sándwich con Salmon Ahumado,Aguacate y Huevo</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatibus rerum ipsa!</p>
+                            </div>
+                            <div class="plato-precio">
+                                <p>7.90€</p>
+                            </div>
+                        </div>   
+                        <div class="contenido-plato">
+                            <div class="plato-texto">
+                                <h3>Hamburguesa de Ternera 100gr </h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatibus rerum ipsa!</p>
+                            </div>
+                            <div class="plato-precio">
+                                <p>8.90€</p>
+                            </div>
+                        </div>    
+                    </div> <!-- sandwiches y hamburguesas -->              
+                    <div class="platos carta-postres p-3 col-md-6">
+                        <div class="plato-clase d-flex justify-content-between align-items-center mb-3">
+                            <h2>Postres y Dulces:</h2> 
+                            <img src="src/img/tortas.webp" alt="logo-tortitas">
+                        </div>
+                        <div class="contenido-plato">
+                            <div class="plato-texto">
+                                <h3>Tortitas con Nata, Frutas y Caramelo</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+                            </div>
+                            <div class="plato-precio">
+                                <p>4.40€</p>
+                            </div>
+                        </div>   
+                        <div class="contenido-plato">
+                            <div class="plato-texto">
+                                <h3>Brownie de Chocolate</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="plato-precio">
+                                <p>5.50€</p>
+                            </div>
+                        </div>      
+                    </div> <!-- Reposteria -->              
+                    <div class="platos carta-coctel p-3 col-md-6">
+                        <div class="plato-clase d-flex justify-content-between align-items-center mb-3">
+                            <h2>Bebidas:</h2> 
+                            <img src="src/img/cocteles.webp" alt="logo-bebida">
+                        </div>
+                        <div class="contenido-plato">
+                            <div class="plato-texto">
+                                <h3>Cerveza</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            </div>
+                            <div class="plato-precio">
+                                <p>2.50€</p>
+                            </div>
+                        </div>
+                        <div class="contenido-plato">
+                            <div class="plato-texto">
+                                <h3>Botella de Agua Mineral</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            </div>
+                            <div class="plato-precio">
+                                <p>1.90€</p>
+                            </div>
+                        </div>
+                    </div> <!--  bebidas  -->                          
+               </div> <!-- contenedor platos -->   
+            </div>
+        </div>          
+    </main><!-- cartas -->
+    
+    <div class="icono-turn">
+        <a href="#turn-up"> 
+           <img src="src/img/u-turn.webp" alt="icono turn-up">
+        </a>
+    </div>
+
+    <footer class="footer">
+        <div class="menus-footer d-flex flex-column align-items-center">
+              
+              <div class="d-flex flex-column align-items-center "> 
+                  <p class="text-white mb-4 fw-bold">Visita nuestras redes sociales:</p>
+                  <ul class="nav menu-redes d-flex">
+                      <li class="nav-item me-5">
+                          <a href="https://www.whatsapp.com/?lang=es" target="_blank" rel="noopener noreferrer">
+                              <span>whatsApp</span>
+                             <img src="src/img/Whatsapp-Icon_33936.webp" alt="imagen-whatsup">
+                          </a>
+                      </li>       
+                      <li class="nav-item me-5">
+                          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                              <span>Youtube</span>
+                              <img src="src/img/Youtube_icon-icons.com_66802.webp" alt="imagen-youtube">
+                          </a>
+                      </li>       
+                      <li class="nav-item me-5">
+                          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                              <span>Facebook</span>
+                              <img src="src/img/social_facebook_button_blue_256_30648.webp" alt="imagen-facebook">
+                          </a>
+                      </li>       
+                      <li class="nav-item me-5">
+                          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                              <span>Twitter</span>
+                              <img src="src/img/Twitter-Icon_34073.webp" alt="imagen-twitter">
+                          </a>
+                      </li>       
+                      <li class="nav-item">
+                          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                              <span>Instagram</span>
+                              <img src="src/img/Instagram_icon-icons.com_66804.webp" alt="imagen-instagram">
+                          </a>
+                      </li>              
+                  </ul>
+              </div> <!--  Menu redes -->    
+              
+              <div>
+                  <ul class="menu-politicas nav d-flex align-items-center">
+                      <li class="nav-item me-md-5">
+                          <a class="nav-link fw-bold" href="politica.html">Política de Privacidad</a>
+                      </li>
+                      <li class="nav-item  me-md-5">
+                          <a class="nav-link fw-bold" href="aviso.html">Aviso Legal</a>
+                      </li>
+                      <li class="nav-item ">
+                          <a class="nav-link fw-bold" href="cookies.html">Política de Cookies</a>
+                      </li>
+                  </ul>      
+              </div><!-- menu politicas -->
+        </div>
+      </footer>
+
+      <script src="js/bootstrap.bundle.min.js"></script>
+      
+</body>
+</html>

@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Menu grupos restaurante">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="src/img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Grupos restaurante</title>
+</head>
+<body class="imagenfondo-grupos">
+    <header class="header">
+        <div class="contenido-logo">
+            <a href="index.html">
+                <img src="src/img/logomarca.webp" alt="logo-restaurante">  
+            </a> 
+            <div class="logo-texto">
+                <h1>Taste</h1>
+                <span>Food and Drinks</span>
+            </div>    
+        </div> 
+
+        <nav class="menu-principal navbar navbar-expand-lg d-flex justify-content-end overflow-hidden p-0">
+
+             <button type="button" class="navbar-toggler" data-bs-target="#menuCanvas" data-bs-toggle="offcanvas">  
+                    <img src="src/img/btn-menu.webp" class="logo-desplegable" alt="logo-desplegable">  
+             </button>
+
+            <div class="collapse navbar-collapse menu-header">
+                  <ul class="d-flex justify-content-between align-items-center m-0">
+                     <li class="navbar-item">
+                        <a href="index.html" class="nav-link">Restaurante</a>     
+                     </li>
+
+                     <li class="navbar-item">
+                        <a href="carta.html" class="nav-link">Carta</a>
+                     </li>
+                     <li class="navbar-item">
+                        <a href="especialidades.html" class="nav-link">Especialidades</a>
+                     </li>
+                     <li class="navbar-item">
+                        <a href="grupos.html" class="nav-link">Menu Grupos</a>
+                     </li>
+                     <li class="navbar-item">
+                        <a href="reservas.html" target="_blank" rel="noopener noreferrer" class="nav-link mr-0" >Reservas</a>
+                     </li>
+                  </ul>
+            </div>
+        </nav>
+
+        <div class="menu-desplegable offcanvas offcanvas-end w-50" id="menuCanvas">
+            <div class="offcanvas-header heading">
+                <h3>Taste</h3>
+                <button class="btn btn-close btn-close-white" data-bs-dismiss="offcanvas">  
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <nav class="nav d-flex flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <span>Restaurante</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carta.html">
+                            <span>Carta</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="especialidades.html">
+                            <span>Especialidades</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="grupos.html">
+                            <span>Menú para Grupos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservas.html" target="_blank" rel="noopener noreferrer">
+                            <span>Reservas</span>
+                        </a>
+                    </li>       
+                </nav>
+            </div>
+        </div>        
+    </header>
+
+    <section class="titulo-grupos" id="turn-up">
+      <div class="grupos-imagen">
+        <div class="grupos-contenido">
+            <div class="grupos-texto">
+                <h1>Menú Grupos</h1>
+                <p>Ven a disfrutar con tus familiares y amigos de nuestros menús para grupos con precios y descuentos especiales </p>
+                <div class="dropdown menus">
+                    <a class="dropdown-toggle btn-menus" href="#" data-bs-toggle="dropdown" >Descubre nuestros menus</a>
+                    <ul class="dropdown-menu lista-menus">
+                        <li>
+                            <a class="dropdown-item" href="#dos-personas">Menú 2 personas</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#cuatro-personas">Menú 4 personas</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#seis-personas">Menú 6 personas</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#grupos-numerosos">Menú grupos numerosos</a>
+                        </li>
+                    </ul>
+                </div> 
+            </div>             
+        </div>   
+      </div>    
+    </section>
+
+    <main class="contenedor-menus contenedor">   
+        <div class="contenido-menus"> 
+            <div id="dos-personas" class="menu">
+                <img src="src/img/menu2.webp" alt="imagen-menu2">
+                <div class="contenido-menu">
+                  <div class="bordes-menu inicio"></div>
+                    <h2>Menú 2 personas</h2>
+                    <ul class="lista-personas">
+                        <li class="titulo primero">Para Compartir</li>
+                        <ul class="platos">
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere </li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisici</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </li>
+                        </ul>
+                        <li class="titulo segundo">Segundo Plato</li>
+                        <ul class="platos">
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum cupiditate deleniti harum similique.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum cupiditate deleniti.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum cupiditate deleniti harum similique possimus, qui delectus.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        </ul>
+                        <li class="titulo postre">Dulce Tentación</li>
+                        <ul class="platos">
+                            <li>Lorem ipsum dolor sit amet </li>
+                            <li>Lorem ipsum dolor sit amet consectetur </li>
+                        </ul>
+                        <li class="titulo bebida">Bebidas</li>
+                        <ul class="platos">
+                            <li>Lorem ipsum dolor sit amet </li>
+                            <li>Lorem ipsum dolor sit amet consectetur </li>
+                        </ul>
+                    </ul> <!-- contenido-menu  -->
+                    <p class="precio">Precio por persona 45€</p>
+                    <h4>10% de descuento en reservas online</h4>
+                      <a href="reservas.html" class="boton-reservar">
+                        <div class="icono">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                        </svg>
+                        </div>
+                        <span> Reservar</span>
+                    </a>
+                <div class="bordes-menu fin"></div>
+                </div>
+            </div>
+            <div id="cuatro-personas" class="menu">
+                <img src="src/img/menu4.webp" alt="imagen-menu4">
+                <div class="contenido-menu">
+                <div class="bordes-menu inicio"></div>
+                    <h2>Menú 4 personas</h2>
+                    <ul class="lista-personas">
+                        <li class="titulo primero">Para Compartir</li>
+                            <ul class="platos">
+                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere </li>
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisici</li>
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </li>
+                            </ul>
+                        <li class="titulo segundo">Segundo Plato</li>
+                            <ul class="platos">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum cupiditate deleniti harum similique.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum cupiditate deleniti.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum cupiditate deleniti harum similique possimus, qui delectus.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            </ul>
+                        <li class="titulo postre">Dulce Tentación</li>
+                            <ul class="platos">
+                                <li>Lorem ipsum dolor sit amet </li>
+                                <li>Lorem ipsum dolor sit amet consectetur </li>
+                            </ul>
+                        <li class="titulo bebida">Bebidas</li>
+                            <ul class="platos ">
+                                <li>Lorem ipsum dolor sit amet </li>
+                                <li>Lorem ipsum dolor sit amet consectetur </li>
+                            </ul>
+                    </ul> <!-- contenido-menu  -->
+                    <p class="precio">Precio por persona 55€</p>
+                    <h4>10% de descuento en reservas online</h4>
+                    <a href="reservas.html" class="boton-reservar">
+                    <div class="icono">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                        </svg>
+                    </div>
+                    <span> Reservar</span>
+                    </a>
+                <div class="bordes-menu fin"></div>
+                </div>
+            </div>
+            <div id="seis-personas" class="menu">
+                <img src="src/img/menuseis.webp" alt="imagen-menu6">
+                <div class="contenido-menu">
+                <div class="bordes-menu inicio"></div>
+                    <h2>Menú 6 a 8 personas</h2>
+                    <ul class="lista-personas">
+                        <li class="titulo primero">Para Compartir</li>
+                        <ul class="platos">
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere </li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisici</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </li>
+                        </ul>
+                        <li class="titulo segundo">Segundo Plato</li>
+                        <ul class="platos">
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum cupiditate deleniti harum similique.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum cupiditate deleniti.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum cupiditate deleniti harum similique possimus, qui delectus.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        </ul>
+                        <li class="titulo postre">Dulce Tentación</li>
+                        <ul class="platos">
+                            <li>Lorem ipsum dolor sit amet </li>
+                            <li>Lorem ipsum dolor sit amet consectetur </li>
+                        </ul>
+                        <li class="titulo bebida">Bebidas</li>
+                        <ul class="platos">
+                            <li>Lorem ipsum dolor sit amet </li>
+                            <li>Lorem ipsum dolor sit amet consectetur </li>
+                        </ul>
+                    </ul> <!-- contenido-menu  -->
+                    <p class="precio">Precio por persona 65€</p>
+                    <h4>10% de descuento en reservas online</h4>
+                    <a href="reservas.html" class="boton-reservar">
+                    <div class="icono">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                        </svg>
+                    </div>
+                    <span> Reservar</span>
+                    </a>
+                <div class="bordes-menu fin"></div>
+                </div>
+            </div>
+            <div id="grupos-numerosos" class="menu">
+                <img src="src/img/menuvarios.webp" alt="imagen-varios">
+                <div class="contenido-menu">
+                <div class="bordes-menu inicio"></div>
+                    <h2>Menú grupos numerosos</h2>
+                    <ul class="lista-personas">
+                        <li class="titulo primero">Para Compartir</li>
+                        <ul class="platos">
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere </li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisici</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </li>
+                        </ul>
+                        <li class="titulo segundo">Segundo Plato</li>
+                        <ul class="platos">
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum cupiditate deleniti harum similique.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum cupiditate deleniti.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum cupiditate deleniti harum similique possimus, qui delectus.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        </ul>
+                        <li class="titulo postre">Dulce Tentación</li>
+                        <ul class="platos">
+                            <li>Lorem ipsum dolor sit amet </li>
+                            <li>Lorem ipsum dolor sit amet consectetur </li>
+                        </ul>
+                        <li class="titulo bebida">Bebidas</li>
+                        <ul class="platos">
+                            <li>Lorem ipsum dolor sit amet </li>
+                            <li>Lorem ipsum dolor sit amet consectetur </li>
+                        </ul>
+                    </ul> <!-- contenido-menu  -->
+                    <p class="precio">Precio por persona 75€</p>
+                    <h4>15% de descuento en reservas online</h4>
+                    <a href="reservas.html" class="boton-reservar">
+                    <div class="icono">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                        </svg>
+                    </div>
+                    <span> Reservar</span>
+                    </a>
+                <div class="bordes-menu fin"></div>
+                </div>
+            </div>    
+        </div>
+    </main>
+
+    <div class="icono-turn">
+        <a href="#turn-up"> 
+           <img src="src/img/u-turn.webp" alt="icono turn-up">
+        </a>
+    </div>
+        
+    <footer class="footer">
+        <div class="menus-footer d-flex flex-column align-items-center">
+              
+              <div class="d-flex flex-column align-items-center "> 
+                  <p class="text-white mb-4 fw-bold">Visita nuestras redes sociales:</p>
+                  <ul class="nav menu-redes d-flex">
+                      <li class="nav-item me-5">
+                          <a href="https://www.whatsapp.com/?lang=es" target="_blank" rel="noopener noreferrer">
+                              <span>whatsApp</span>
+                             <img src="src/img/Whatsapp-Icon_33936.webp" alt="imagen-whatsup">
+                          </a>
+                      </li>       
+                      <li class="nav-item me-5">
+                          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                              <span>Youtube</span>
+                              <img src="src/img/Youtube_icon-icons.com_66802.webp" alt="imagen-youtube">
+                          </a>
+                      </li>       
+                      <li class="nav-item me-5">
+                          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                              <span>Facebook</span>
+                              <img src="src/img/social_facebook_button_blue_256_30648.webp" alt="imagen-facebook">
+                          </a>
+                      </li>       
+                      <li class="nav-item me-5">
+                          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                              <span>Twitter</span>
+                              <img src="src/img/Twitter-Icon_34073.webp" alt="imagen-twitter">
+                          </a>
+                      </li>       
+                      <li class="nav-item">
+                          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                              <span>Instagram</span>
+                              <img src="src/img/Instagram_icon-icons.com_66804.webp" alt="imagen-instagram">
+                          </a>
+                      </li>              
+                  </ul>
+              </div> <!--  Menu redes -->    
+              
+              <div>
+                  <ul class="menu-politicas nav d-flex align-items-center">
+                      <li class="nav-item me-md-5">
+                          <a class="nav-link fw-bold" href="politica.html">Política de Privacidad</a>
+                      </li>
+                      <li class="nav-item  me-md-5">
+                          <a class="nav-link fw-bold" href="aviso.html">Aviso Legal</a>
+                      </li>
+                      <li class="nav-item ">
+                          <a class="nav-link fw-bold" href="cookies.html">Política de Cookies</a>
+                      </li>
+                  </ul>      
+              </div><!-- menu politicas -->
+        </div>
+      </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

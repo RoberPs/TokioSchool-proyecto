@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="src/img/favicon-32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,900;1,600&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">   
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.min.css" rel="stylesheet">
+    <title>ProyectoRestaurante</title>
+</head>
+<body class="fondo-reservas">
+
+    <header class="header">
+        <div class="contenido-logo">
+            <a href="index.html">
+                <img src="src/img/logomarca.webp" alt="logo-restaurante">  
+            </a> 
+            <div class="logo-texto">
+                <h1>Taste</h1>
+                <span>Food and Drinks</span>
+            </div>    
+        </div> 
+
+        <nav class="menu-principal navbar navbar-expand-lg d-flex justify-content-end overflow-hidden p-0">
+
+             <button type="button" class="navbar-toggler" data-bs-target="#menuCanvas" data-bs-toggle="offcanvas">  
+                    <img src="src/img/btn-menu.webp" class="logo-desplegable" alt="logo-desplegable">  
+             </button>
+
+            <div class="collapse navbar-collapse menu-header">
+                  <ul class="d-flex justify-content-between align-items-center m-0">
+                     <li class="navbar-item">
+                        <a href="index.html" class="nav-link">Restaurante</a>     
+                     </li>
+                     <li class="navbar-item">
+                        <a href="carta.html" class="nav-link">Carta</a>
+                     </li>
+                     <li class="navbar-item">
+                        <a href="especialidades.html" class="nav-link">Especialidades</a>
+                     </li>
+                     <li class="navbar-item">
+                        <a href="grupos.html" class="nav-link">Menu Grupos</a>
+                     </li>
+                     <li class="navbar-item">
+                        <a href="reservas.html" class="nav-link mr-0" >Reservas</a>
+                     </li>
+                  </ul>
+            </div>
+        </nav>
+
+        <div class="menu-desplegable offcanvas offcanvas-end w-50" id="menuCanvas">
+            <div class="offcanvas-header heading">
+                <h3>Taste</h3>
+                <button class="btn btn-close btn-close-white" data-bs-dismiss="offcanvas">  
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <nav class="nav d-flex flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <span>Restaurante</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carta.html">
+                            <span>Carta</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="especialidades.html">
+                            <span>Especialidades</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="grupos.html">
+                            <span>Menú para Grupos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservas.html">
+                            <span>Reservas</span>
+                        </a>
+                    </li>       
+                </nav>
+            </div>
+        </div>        
+    </header>
+   
+   <main class="contenedor-contacto container-xl pb-5 d-xl-flex justify-content-center align-items-center">
+
+        <section class="reservas" id="turn-up">
+            <div class="reservas-titulo">
+                <h2 class="text-center">Reserva tu mesa</h2>  
+                <img src="src/img/logoreserva.png" alt="imagen-reserva">
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F5B041" fill-opacity="1" d="M0,96L60,128C120,160,240,224,360,261.3C480,299,600,309,720,309.3C840,309,960,299,1080,282.7C1200,267,1320,245,1380,234.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+            <div class="contenedor-formulario container-xl mt-3 mb-5 pt-5 pb-5 w-75 border border-white rounded-3">   
+                
+                <form id="formulario" class="container-xl pb-5" action="https://formsubmit.co/restaurtaste@gmail.com" method="POST">
+                    <h3 class="text-white text-center">Contacto</h3>
+                    <div class="row">
+                        <div class="form-group mb-3 col-md-6">
+                            <label class="form-label text-white fs-4 mb-3" for="nombre">Nombre</label>
+                            <input class="form-control p-2" type="text" id="nombre" name="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="form-group mb-3 col-md-6">
+                            <label class="form-label text-white fs-4 mb-3" for="telefono">Teléfono</label>
+                            <input class="form-control p-2" type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+                        </div>
+                        <div class="form-group mb-3 col-md-6">
+                            <label class="form-label text-white fs-4 mb-3" for="email">Email</label>
+                            <input class="form-control p-2" type="email" id="email" name="email" placeholder="email@email.com">
+                        </div>
+                        <div class="form-group mb-3 col-md-6">
+                            <label class="form-label text-white fs-4 mb-3" for="fecha">Fecha</label>
+                            <input class="form-control p-2" type="date" id="fecha" name="fecha">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label class="form-label text-white fs-4 mb-3" for="observaciones">Observaciones</label>
+                            <textarea class="form-control" name="observaciones" id="observaciones" cols="30" rows="5" placeholder="Indique sus preferencias , nº de personas,alergias, etc..."></textarea>
+                        </div> 
+                        <div>
+                            <button type="submit" class="btn btn-outline-light d-block mx-auto border border-3  text-uppercase fw-bold fs-4 mb-2 mt-4 p-3" disabled>Enviar Reserva
+                                <i class="fa-solid fa-paper-plane m-1"></i>
+                            </button>   
+                        </div>  
+                    </div>  
+                    <input type="hidden" name="_next" value="http://www.sabordetaste.com/reservas.html"> 
+                    <input type="hidden" name="_captcha" value="false"> 
+                </form>
+                  
+                <div class="vias-contacto d-md-flex align-items-center  justify-content-around">
+                    <div class="via d-flex flex-column justify-content-center align-items-center mt-5 mt-md-0">
+                        <div class="via-imagen">
+                            <img class="via-img" src="src/img/telephone (1).png" alt="img-telefono">
+                        </div>
+                        <div class="via-texto mt-3">
+                            <h4>Teléfono:</h4>
+                            <a class="via-link" href="tel:677733322">+34 677733322</a>
+                        </div> 
+                    </div>       
+                    <div class="via d-flex flex-column justify-content-center align-items-center mt-5 m-md-0">
+                        <div class="via-imagen">
+                            <img class="via-img" src="src/img/email.png" alt="img-email">
+                        </div>
+                        <div class="via-texto mt-3">
+                            <h4>Email :</h4>
+                            <a class="via-link"href="mailto:restaurtaste@gmail.com">restaurtaste@gmail.com</a>
+                        </div>
+                    </div>     
+
+                    <div class="via d-flex flex-column justify-content-center align-items-center mt-5">
+                        <div class="via-imagen">
+                            <img class="via-img" src="src/img/location.png" alt="img-localizacion">
+                        </div>
+                        <div class="via-texto mt-3">
+                            <h4>Estamos en :</h4>
+                            <span>Avda Las Libertades 54 28902 Madrid </span>
+                            <div class="horarios d-flex flex-column align-items-center border-top mt-2 ">
+                                <p class="mt-2">Horario de apertura :</p>
+                                <ul class="list-unstyled border-bottom">
+                                    <li class="fw-bold fs-5">
+                                        Martes a Viernes : <span class="fw-normal"> 8:00 a 23:30 h</span> 
+                                    </li>
+                                    <li class="fw-bold fs-5">
+                                        Sabados y Domingos :<span class="fw-normal"> 8:00 a 1:00 h</span> 
+                                    </li>
+                                    <li class="fw-bold fs-5">
+                                        Lunes : <span class="fw-normal"> cerrados por descanso</span> 
+                                    </li>
+                                </ul>       
+                            </div>
+                        </div>
+                    </div>         
+                </div><!-- vias de contacto -->     
+            </div> 
+        </section>
+
+        <section id="map">
+        </section>
+
+   </main>
+  
+   <div class="icono-turn">
+     <a href="#turn-up"> 
+       <img src="src/img/u-turn.webp" alt="icono turn-up">
+     </a>
+   </div>
+   
+   <footer class="footer">
+    <div class="menus-footer d-flex flex-column align-items-center">
+          
+          <div class="d-flex flex-column align-items-center "> 
+              <p class="text-white mb-4 fw-bold">Visita nuestras redes sociales:</p>
+              <ul class="nav menu-redes d-flex">
+                  <li class="nav-item me-5">
+                      <a href="https://www.whatsapp.com/?lang=es" target="_blank" rel="noopener noreferrer">
+                          <span>whatsApp</span>
+                         <img src="src/img/Whatsapp-Icon_33936.webp" alt="imagen-whatsup">
+                      </a>
+                  </li>       
+                  <li class="nav-item me-5">
+                      <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                          <span>Youtube</span>
+                          <img src="src/img/Youtube_icon-icons.com_66802.webp" alt="imagen-youtube">
+                      </a>
+                  </li>       
+                  <li class="nav-item me-5">
+                      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                          <span>Facebook</span>
+                          <img src="src/img/social_facebook_button_blue_256_30648.webp" alt="imagen-facebook">
+                      </a>
+                  </li>       
+                  <li class="nav-item me-5">
+                      <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                          <span>Twitter</span>
+                          <img src="src/img/Twitter-Icon_34073.webp" alt="imagen-twitter">
+                      </a>
+                  </li>       
+                  <li class="nav-item">
+                      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                          <span>Instagram</span>
+                          <img src="src/img/Instagram_icon-icons.com_66804.webp" alt="imagen-instagram">
+                      </a>
+                  </li>              
+              </ul>
+          </div> <!--  Menu redes -->    
+          
+          <div>
+              <ul class="menu-politicas nav d-flex align-items-center">
+                  <li class="nav-item me-md-5">
+                      <a class="nav-link fw-bold" href="politica.html">Política de Privacidad</a>
+                  </li>
+                  <li class="nav-item  me-md-5">
+                      <a class="nav-link fw-bold" href="aviso.html">Aviso Legal</a>
+                  </li>
+                  <li class="nav-item ">
+                      <a class="nav-link fw-bold" href="cookies.html">Política de Cookies</a>
+                  </li>
+              </ul>      
+          </div><!-- menu politicas -->
+    </div>
+  </footer>
+
+
+ 
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script async
+           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6sIbAdehZItUUjYmfDaeeHNPwedHeGUI&libraries=places&callback=initMap">
+    </script>
+    <script src="js/map.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"></script>
+    
+ </body>
+</html>
